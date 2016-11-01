@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Anda Memesan"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tVKue"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginStart="26dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:hint="Pesan anda pada kartu nama"
+        android:layout_marginTop="41dp"
+        android:id="@+id/txtPesan"
+        android:layout_below="@+id/tVKue"
+        android:layout_alignStart="@+id/tVKue" />
+
+
+    <TextView
+        android:text="from"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtReceiver"
+        android:layout_alignStart="@+id/txtReceiver"
+        android:layout_marginTop="63dp"
+        android:id="@+id/textView5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Nama Pengirim"
+        android:ems="10"
+        android:layout_below="@+id/textView5"
+        android:layout_alignEnd="@+id/txtReceiver"
+        android:layout_marginTop="16dp"
+        android:id="@+id/txtPengirim" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPengirim"
+        android:layout_toEndOf="@+id/txtPengirim"
+        android:layout_marginTop="24dp"
+        android:id="@+id/btnSubmit" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Friends"
+        android:ems="10"
+        android:layout_marginTop="19dp"
+        android:id="@+id/txtReceiver"
+        android:layout_below="@+id/txtPesan"
+        android:layout_alignStart="@+id/txtPesan" />
+
+</RelativeLayout>
